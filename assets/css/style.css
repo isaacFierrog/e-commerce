@@ -194,3 +194,22 @@ ul{
 .quantity__counter{
     font-weight: 700;
 }
+.btn-buy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 2rem;
+    background-color: hsl(26, 100%, 55%);
+    border: none;
+    border-radius: 1rem;
+}
+.btn-buy__img{
+    margin-right: 1.5rem;
+    fill: white;
+}
+.btn-buy__text{
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: white;
+}
