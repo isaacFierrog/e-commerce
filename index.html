@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+  <!-- Menu movil -->
+  <aside class="panel panel--hidden">
+    <nav class="nav nav--hidden">
+      <img class="nav__close" src="./images/icon-close.svg" alt="close">
+      <a class="nav__link" href="#">Collections</a>
+      <a class="nav__link" href="#">Men</a>
+      <a class="nav__link" href="#">Women</a>
+      <a class="nav__link" href="#">About</a>
+      <a class="nav__link" href="#">Contact</a>
+    </nav>
+  </aside>
+
+  <header class="header">
+    <nav class="header-nav">
+      <img class="header-nav__menu" src="./images/icon-menu.svg" alt="menu">
+      <h2 class="header-nav__title">sneakers</h2>
+    </nav>
+    <article class="user">
+      <img class="user__cart" src="./images/icon-cart.svg" alt="cart">
+      <img class="user__avatar" src="./images/image-avatar.png" alt="user">
+    </article>
+  </header>
+
+  <section class="image-container">
+    <article class="slide">
+      <figure class="slide__button slide--left">
+        <img class="slide__img" src="./images/icon-previous.svg" alt="arrow-left">
+      </figure>
+      <figure class="slide__button slide--right">
+        <img class="slide__img" src="./images/icon-next.svg" alt="arrow-right">
+      </figure>
+    </article>
+  </section>
+
+  <main class="main">
+    <section class="info">
+      <h3>Sneaker Company</h3>
+      <h1>Fall Limited Edition Sneakers</h1>
+      <p>These low-profile sneakers are your perfect casual wear companion. Featuring a 
+        durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+    </section>
+    <article class="price">
+      <section>
+        <h2>$125.00</h2>
+        <p>50%</p>
+        <p>$250.00</p>
+      </section>
+      <section>
+        <article>
+          <img src="./images/icon-minus.svg" alt="minus">
+          <p>0</p>
+          <img src="./images/icon-plus.svg" alt="plus">
+        </article>
+        <button>
+          <img src="./images/icon-cart.svg" alt="cart">
+        </button>
+      </section>
+    </article>
+  </main>
+
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>
