@@ -48,9 +48,20 @@ const addProducts = (selecMinus, selecPlus, selecCounter) => {
     })
 }
 
+const toggleCart = (selecButton, selecItem) => {
+    const $item = d.querySelector(selecItem);
+
+    d.addEventListener('click', e => {
+        if(!e.target.matches(selecButton)) return;
+
+        $item.classList.toggle('cart--hidden');
+    });
+}
+
 
 d.addEventListener('DOMContentLoaded', e => {
     toggleMenu('.panel', '.nav__close', '.header-nav__menu');
     toggleImage('.image-container', '.slide--left', '.slide--right');
     addProducts('.quantity__minus', '.quantity__plus', '.quantity__counter');
+    toggleCart('.user__cart', '.cart');
 });

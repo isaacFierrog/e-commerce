@@ -34,6 +34,7 @@ ul{
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 1;
     min-height: 100vh;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
@@ -72,6 +73,30 @@ ul{
 }
 .nav__link:last-of-type{
     margin-bottom: 0;
+}
+
+/* Estilos cart */
+.cart{
+    position: fixed;
+    top: 8.5rem;
+    left: 50%;
+    z-index: 2;
+    width: 95vw;
+    min-height: 20rem;
+    transform: translate(-50%);
+    background-color: white;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.3);
+    transition: all .3s ease-in-out;
+}
+.cart--hidden{
+    opacity: 0;
+    visibility: hidden;
+}
+.cart__title{
+    padding: 2.5rem;
+    font-size: 1.6rem;
 }
 
 /* Estilos header */
