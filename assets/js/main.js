@@ -34,8 +34,23 @@ const toggleImage = (selecContainer, selecPrev, selecNext) => {
     })
 }
 
+const addProducts = (selecMinus, selecPlus, selecCounter) => {
+    const $counter = d.querySelector(selecCounter);
+    let productsCounter = 0;
+
+    d.addEventListener('click', e => {
+        if(e.target.matches(selecMinus)) productsCounter--;
+        if(e.target.matches(selecPlus)) productsCounter++;
+
+        if(productsCounter < 0) productsCounter = 0;
+
+        $counter.textContent = `${productsCounter}`;
+    })
+}
+
 
 d.addEventListener('DOMContentLoaded', e => {
     toggleMenu('.panel', '.nav__close', '.header-nav__menu');
     toggleImage('.image-container', '.slide--left', '.slide--right');
+    addProducts('.quantity__minus', '.quantity__plus', '.quantity__counter');
 });
