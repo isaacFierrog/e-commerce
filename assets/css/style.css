@@ -110,8 +110,7 @@ ul{
     justify-content: space-between;
     padding: 2rem;
 }
-.header-nav__menu,
-.user__cart{
+.header-nav__menu{
     width: 1.5rem;
     height: 1.5rem;
     margin-right: 2rem;
@@ -120,7 +119,11 @@ ul{
     margin-top: -.5rem;
     font-size: 3.2rem;
 }
-.user__avatar{
+.user__cart{
+    margin-right: 2rem;
+}
+.user__avatar,
+.user__cart{
     width: 2.5rem;
     height: 2.5rem;
 }
